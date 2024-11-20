@@ -12,7 +12,13 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "jose-elias-alvarez/null-ls.nvim", 
+    ft = "go",
+    opts = function ()
+      return require "configs.null-ls"
+    end
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
